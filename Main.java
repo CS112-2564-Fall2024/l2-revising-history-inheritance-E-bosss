@@ -25,6 +25,7 @@ public class Main {
 		System.out.println("\n====================================================");
 		System.out.println("REVISED HISTORICAL EVENT EXAMPLE:");
 		System.out.println("====================================================");
-		tulsaMassacre.teach();
+		// tulsaMassacre.teach();
+		System.out.println(tulsaMassacre);
 	}
 }
