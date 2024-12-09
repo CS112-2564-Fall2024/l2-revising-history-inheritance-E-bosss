@@ -22,9 +22,28 @@ public class Main {
 		RevisedHistoricalEvent tulsaMassacre = new RevisedHistoricalEvent(tulsaDescription, tulsaDay,
 			tulsaRevised, tulsaCitation);
 		
+		// System.out.println("\n====================================================");
+		// System.out.println("REVISED HISTORICAL EVENT EXAMPLE:");
+		// System.out.println("====================================================");
+		// tulsaMassacre.teach();
+		// System.out.println(tulsaMassacre);
+
+		String pearlHarbor = "The bombing of Pearl Harbor marked the entry of the US into WW2. Located on the Island of Oahu, the current president FDR moved his fleet from San Diego to help prepare for conflict from the simmering tensions bewteen the US and Japan. Japan in secrecy sailed its ships across open waters to launch a suprise attack to incapacitate the american naval fleet. This worked and thus let the Japanese army make to advance much into europe and china without the worry of the US to aid in the time being";
+		Date pearlHarborDate = new Date(12, 7, 1941);
+		HistoricalEvent pearlHarborEvent = new HistoricalEvent(pearlHarbor, pearlHarborDate);
+
+		String pearlHarborRevised = "Rising tensions in the Europe between its countries and Germany as well as the ongoing war bewteen China and Japan eventually led to the US getting involved. The US trying to stay neutral for as long as it could would eventaully be the target by Japan and its need to continue conquest. Japan launched a suprise attack against the US naval forces stationed in Pearl Harbor to try and weaken the US vast military might. Japans sent a large naval army across the pacific and launched an attack on december 7 of 1941 which marks the entry of the US into WW2";
+		String pearlHarborCitation = "https://www.nationalww2museum.org/war/topics/pearl-harbor-december-7-1941";
+
+		RevisedHistoricalEvent revisedPearlHarbor = new RevisedHistoricalEvent(pearlHarbor, pearlHarborDate, pearlHarborRevised, pearlHarborCitation);
+		System.out.println("====================================================");	
+		System.out.println("HISTORICAL EVENT EXAMPLE:");
+		System.out.println("====================================================");
+		System.out.println(pearlHarborEvent);
+
 		System.out.println("\n====================================================");
 		System.out.println("REVISED HISTORICAL EVENT EXAMPLE:");
 		System.out.println("====================================================");
-		tulsaMassacre.teach();
+		System.out.println(revisedPearlHarbor);
 	}
 }
